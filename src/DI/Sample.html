@@ -1,0 +1,30 @@
+<h2>Dependency Injection</h2>
+
+<table>
+    <tr>
+        <td>Number 1</td>
+        <td><input type="text" [(ngModel)]="num1"></td>
+    </tr>
+    <tr>
+        <td>Number 2</td>
+        <td><input type="text" [(ngModel)]="num2"></td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <input type="button" value="Calculate" (click)="Calculate(num1,num2)"> 
+            &nbsp;
+            <input type="button" value="Primes" (click)="DisplayPrimes(num1,num2)"></td>
+            
+    </tr>
+
+</table>
+<hr/>
+<h4>Addition = {{addresult}}</h4>
+<h4>Substraction = {{subresult}}</h4>
+<h4>Multiplication = {{mulresult}}</h4>
+<h4>Divison = {{divresult}}</h4>
+<ul>
+    @for(p of primes; track p){
+        <li>{{p}}</li>
+    }
+</ul>

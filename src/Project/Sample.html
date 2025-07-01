@@ -1,0 +1,19 @@
+<h2>This is Sample Web Design</h2>
+<h1>Roll No = {{rno}}</h1>
+<h1>Student Name = {{name}}</h1>
+<h2>{{d*d}}</h2>
+<h2>{{d/2}}</h2>
+<ul>
+    <!-- @for(d of data; track d;let i=$index){
+        <li>{{i}} - {{d}}</li>
+    } -->
+
+      @for(d of data; track  $index){
+        @if(d%5==0){
+            <li>{{d}}</li>
+        }
+        @else {
+            <li>{{$index}} - {{d}}</li>
+        }
+    }
+</ul>

@@ -1,0 +1,23 @@
+<h2>Pipe Demo</h2>
+
+<!-- <h2>{{fname|uppercase}}</h2>
+<h2>{{lname|lowercase}}</h2>
+<h2>{{per|percent:'1.2'}}</h2>
+<h2>{{dt|date}}</h2>
+<h2>{{amount|currency}}</h2>
+<h2>{{amount|currency:"INR"}}</h2> -->
+<div>
+    Start <input type="text" [(ngModel)]="start"> <br/>
+    End <input type="text" [(ngModel)]="end"> <br/>
+    
+    <b>{{start|prime:end}}</b>
+    <hr/>
+</div>
+<div>
+    {{students|json}}
+</div>
+<hr/>
+Number : <input type="text" [(ngModel)]="num"/>
+<br/>
+Power:<input type="text" [(ngModel)]="p">
+<h2>{{num|power:p}}</h2>
